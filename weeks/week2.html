@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>week 2 Team Activity </title>
+
 </head>
+
+
 <body>
+        <!-- 01. -->
+    <div>
+        <h2>Put some text here</h2>
+        <input type="text" name="text" id="input-text" alt="put something here" title="put something here" min="0">
+        
+        <input type="button" class="btn btn-danger" value="submit" id="input-button">
+        
+        <div id="result"> </div>
+    </div>
+
     
+        <!-- 02. -->
+    <div>
+        <h2>put some number here</h2>
+        <input type="number" name="just-numbers" alt="just numbers only" id="input-number">
+        
+        <input type="button" value="submit" id="input-button2">
+        
+        <div id="result2"> </div>
+        
+    </div>
+
+        <!-- 03. -->
+    <div>
+        <h2>Now add by putting a number in the previous box and putting another number in this box</h2>
+        <input type="number" name="add" id="input-num">
+
+        <input type="button" value="+" id="button-add">
+        <input type="button" value="-" id="button-subtraction">
+        <input type="button" value="*" id="button-multiply">
+        <input type="button" value="/" id="button-division">
+
+        <div id="result3"> </div>
+    </div>
+    
+
+    <script>
+
+            // 01.
+        function change() {
+            var words = document.getElementById("input-text").value;
+            
+            document.getElementById("result").innerHTML = words;
+        }
+        document.getElementById("input-button").onclick = function () {change()};
+        
+            // 02.
+        
+        function count() {
+            var numbers = document.getElementById("input-number").value;
+            var x = 0;
+
+            for (let i = 1; i <= numbers; i++) {
+                x = x + i;
+                
+            }
+
+            document.getElementById("result2").innerHTML = x;
+        }
+        document.getElementById("input-button2").onclick = function() {count()};
+
+            // 03.
+// add +
+        
+        function add() {
+            var box1 = document.getElementById("input-number").value;
+            var box2 = document.getElementById("input-num").value;
+
+            var result = Number(box1) + Number(box2);
+
+            document.getElementById("result3").innerHTML = result;
+        }
+// subtraction -
+        
+        var sub = function subtraction() {
+            var box1 = document.getElementById("input-number").value;
+            var box2 = document.getElementById("input-num").value;
+
+            var result = Number(box1) - Number(box2);
+
+            document.getElementById("result3").innerHTML = result;
+        }
+// multiply *
+        
+        var box1 = document.getElementById("input-number").value;
+        var box2 = document.getElementById("input-num").value;
+
+        function multiply() {
+            var result = Number(box1) * Number(box2);
+            document.getElementById("result3").innerHTML = result;
+        }
+// division /
+        
+        var box1 = document.getElementById("input-number").value;
+        var box2 = document.getElementById("input-num").value;
+
+        var division = function division() {
+
+            var result = Number(box1) / Number(box2);
+
+            document.getElementById("result3").innerHTML = result;
+        }
+
+        document.getElementById("button-add").onclick = function () {add()};
+        document.getElementById("button-subtraction").onclick = sub;
+        document.getElementById("button-multiply").onclick = function () {multiply()};
+        document.getElementById("button-division").onclick = division;
+
+    </script>
 </body>
 </html>
