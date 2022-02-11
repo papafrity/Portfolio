@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="visuals/styles.css">
+</head>
+
+<body>
+    
+    <div id="three-container">
+        <header>
+            <h1 class="tracking-in-contract">ToDo List</h1>
+        </header>
+    </div>
+    <!-- <div id="three-container"></div> -->
+    
+    <main>
+        <div class="container">
+                <div id="big-box">
+
+
+                <div class="list">
+                    <!-- <li >
+                        <input type="checkbox" id="addNewTask" name="">
+                        <label for="">
+                            Add New Tasks
+                            <button class="btnx" type="button">X</button>
+                        </label>
+                    </li> -->
+                    
+                    <ul id="showList"></ul>
+
+                </div>
+
+
+                <div class="filter">
+                    <span class="tasksLeft">0</span>
+                    <button class="btnAll"> All</button>
+                    <button class="btnActive"> Active</button>
+                    <button class="btnCompleted"> Completed</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="newTask">
+            <label id="new-label">
+
+                <input placeholder="Add a new task" id="newTask" name="newTask"  type="text">
+                <button id="btnAdd"> + </button>
+            </label>
+        </div>
+
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+    <script src="./visuals/visual.js"></script>
+</body>
+
+</html>
