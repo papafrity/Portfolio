@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week05 notes</title>
+</head>
+<body>
+    <h1>WDD 330 Portfolio</h1>
+    <h2>Week05</h2>
+
+    <ul>
+        <li>
+            Week7 notes/exercises - 
+
+            AJAX - The XMLHttpRequest Object:
+                const xhttp = new XMLHttpRequest();
+
+                Define a callback function
+                xhttp.onload = function() {
+                    Here you can use the Data
+                }
+                the property "onload" could change.
+
+            Send a Request To a Server:
+                open(method, url, async)
+                    method: the type of request: GET or POST
+                    url:    the server (file) location
+                    async:  true (asynchronous) or false (synchronous)
+
+                send()	        Sends the request to the server (used for GET)
+                send(string)	Sends the request to the server (used for POST)
+
+            example:
+                xhttp.open("GET", "ajax_info.txt", true);
+                xhttp.send();
+
+            <h3>Questions: </h3>
+            <ol>
+                <li>
+                    no questions for now. 
+                </li>
+            </ol>
+        </li>
+    </ul>
+    
+</body>
+</html>
