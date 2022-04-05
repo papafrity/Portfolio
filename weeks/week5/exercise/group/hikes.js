@@ -45,7 +45,7 @@ const hikeList = [
     }
   ];
   
-  const imgBasePath = 'https://papafrity.github.io/portfolio/week5/group/images/';
+  const imgBasePath = 'https://papafrity.github.io/Portfolio/weeks/week5/exercise/group/images/';
 
 export default class Hikes{
     constructor(Id){
